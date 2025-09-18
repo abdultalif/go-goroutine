@@ -6,6 +6,23 @@ import (
 	"time"
 )
 
+// Pengenalan Parallel Programming
+// ● Saat ini kita hidup di era multicore, dimana jarang sekali kita menggunakan prosesor yang single core
+// ● Semakin canggih perangkat keras, maka software pun akan mengikuti, dimana sekarang kita bisa dengan mudah membuat proses parallel di aplikasi.
+// ● Parallel programming sederhananya adalah memecahkan suatu masalah dengan cara membaginya menjadi yang lebih kecil, dan dijalankan secara bersamaan pada waktu yang bersamaan pula
+
+// Contoh Parallel
+// ● Menjalankan beberapa aplikasi sekaligus di sistem operasi kita (office, text editor, browser, dan lain-lain)
+// ● Beberapa koki menyiapkan makanan di restoran, dimana tiap koki membuat makanan masing-masing
+// ● Antrian di Bank, dimana tiap teller melayani nasabah nya masing-masing
+
+// Process vs Thread
+// Process 													Thread
+// Process adalah sebuah eksekusi program 					Thread adalah segmen dari process
+// Process mengkonsumsi memory besar 						Thread menggunakan memory kecil
+// Process saling terisolasi dengan process lain			Thread bisa saling berhubungan jika dalam process yang sama
+// Process lama untuk dijalankan dihentikan 				Thread cepat untuk dijalankan dan dihentikan
+
 // Parallel vs Concurrency (penjelasan sebelum masuk goroutine)
 // ● Berbeda dengan paralel (menjalankan beberapa pekerjaan secara bersamaan), concurrency adalah menjalankan beberapa pekerjaan secara bergantian
 // ● Dalam parallel kita biasanya membutuhkan banyak Thread, sedangkan dalam concurrency, kita hanya membutuhkan sedikit Thread
